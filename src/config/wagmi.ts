@@ -2,14 +2,14 @@ import { getDefaultWallets } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import { avalanche, arbitrum, bsc, polygon, optimism } from "@wagmi/core/chains";
+import { avalanche, arbitrum, bsc, polygon, optimism, polygonMumbai, avalancheFuji, optimismGoerli, arbitrumGoerli } from "@wagmi/core/chains";
 
 import { createWagmiAdapter } from "@layerzerolabs/x-trader-joe-bridge";
 
 
 const { chains: wagmiChains, provider } = configureChains(
   // provide wagmi chain configuration
-  [avalanche, bsc, arbitrum, optimism, polygon],
+  [avalanche, bsc, arbitrum, optimism, polygon, avalancheFuji, arbitrumGoerli, optimismGoerli, polygonMumbai],
   [alchemyProvider({ apiKey: process.env.ALCHEMY_ID! }), publicProvider()]
 );
 

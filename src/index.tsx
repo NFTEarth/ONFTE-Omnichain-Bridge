@@ -9,7 +9,7 @@ import {
 } from "@layerzerolabs/x-trader-joe-bridge";
 
 import { wagmi } from "./config/wagmi";
-import { mainnet } from "./config/mainnet";
+import { testnet } from "./config/testnet";
 import { ConnectButton, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 
 import "./styles/reset.css";
@@ -19,7 +19,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { WagmiConfig } from "wagmi";
 
 // boostrap the bridge
-bootstrap(mainnet as any, {
+bootstrap(testnet as any, {
   evm: wagmi.wagmiAdapter,
 });
 
