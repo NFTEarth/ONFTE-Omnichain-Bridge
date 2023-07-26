@@ -20,7 +20,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { WagmiConfig } from "wagmi";
 
 // boostrap the bridge
-bootstrap(testnet, {
+bootstrap(mainnet as any, {
   evm: wagmi.wagmiAdapter,
 });
 
@@ -32,7 +32,7 @@ const App = () => {
   return (
     <Layout>
       <EthereumAdapterProvider>
-        <ThemeProvider theme={themeLight}>
+        <ThemeProvider theme={themeDark}>
           <Bridge />
         </ThemeProvider>
       </EthereumAdapterProvider>
