@@ -4,7 +4,6 @@ import {
   Bridge,
   bootstrap,
   themeDark,
-  themeLight,
   ThemeProvider,
   createWagmiProvider,
 } from "@layerzerolabs/x-trader-joe-bridge";
@@ -30,13 +29,24 @@ const EthereumAdapterProvider = createWagmiProvider(
 
 const App = () => {
   return (
-    <Layout>
-      <EthereumAdapterProvider>
-        <ThemeProvider theme={themeDark}>
-          <Bridge />
-        </ThemeProvider>
-      </EthereumAdapterProvider>
-    </Layout>
+    <EthereumAdapterProvider>
+      <ThemeProvider theme={themeDark}>
+        <Layout>
+          <div style={{
+            display: "flex",
+            justifyContent: "flex-end"
+          }}>
+            <ConnectButton chainStatus="none" accountStatus="address" />
+          </div>
+          <div style={{
+            borderRadius: 10,
+            overflow: 'hidden'
+          }}>
+            <Bridge />
+          </div>
+        </Layout>
+      </ThemeProvider>
+    </EthereumAdapterProvider>
   );
 };
 
@@ -48,7 +58,10 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         minHeight: "100vh",
         minWidth: "100vw",
         justifyContent: "center",
+        alignItems: 'center',
         background: "#F0F0FF",
+        flexDirection: 'column',
+        gap: 60
       }}
     >
       {children}
@@ -67,10 +80,6 @@ root.render(
     {/* use your own rainbow kit provider */}
     <WagmiConfig client={wagmi.wagmiClient as any}>
       <RainbowKitProvider chains={wagmi.wagmiChains}>
-        {/* you use connect button from rainbowkit */}
-        <ConnectButton />
-
-        {/* bridge will use existing integration */}
         <App />
       </RainbowKitProvider>
     </WagmiConfig>

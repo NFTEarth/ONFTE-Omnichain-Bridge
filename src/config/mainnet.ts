@@ -1,5 +1,5 @@
 import {ChainId} from '@layerzerolabs/lz-sdk';
-import {Token } from '@layerzerolabs/x-trader-joe-bridge';
+import {Token} from '@layerzerolabs/x-trader-joe-bridge';
 
 const tokens = [
   new Token(ChainId.BSC, '0xed1fa3155ebB4cE35DA3e2f8B122717B823BDFa1', 18, 'ONFTE'),
