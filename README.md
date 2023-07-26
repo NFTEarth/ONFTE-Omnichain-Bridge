@@ -1,5 +1,7 @@
 # Trader Joe Bridge Example
 
+This brdige is for ONFTE tokens to be seamlessly bridged cross-chain using the LayerZero OFT standard.
+
 This is an example implementation of the Trader Joe Bridge using the @layerzerolabs/x-trader-joe-bridge package.
 
 ## Required Configuration
