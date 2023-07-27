@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.10cdf5d7.css",
-    "main.js": "/static/js/main.020ccd32.js",
+    "main.js": "/static/js/main.296779d2.js",
     "static/js/689.24f4084b.chunk.js": "/static/js/689.24f4084b.chunk.js",
     "static/js/820.7bda5abf.chunk.js": "/static/js/820.7bda5abf.chunk.js",
     "static/js/248.39d37c9c.chunk.js": "/static/js/248.39d37c9c.chunk.js",
@@ -35,7 +35,7 @@
     "static/media/Averta-Cyrillic-SemiBold.otf": "/static/media/Averta-Cyrillic-SemiBold.fd0c8fa2aea13161ecd4.otf",
     "index.html": "/index.html",
     "main.10cdf5d7.css.map": "/static/css/main.10cdf5d7.css.map",
-    "main.020ccd32.js.map": "/static/js/main.020ccd32.js.map",
+    "main.296779d2.js.map": "/static/js/main.296779d2.js.map",
     "689.24f4084b.chunk.js.map": "/static/js/689.24f4084b.chunk.js.map",
     "820.7bda5abf.chunk.js.map": "/static/js/820.7bda5abf.chunk.js.map",
     "248.39d37c9c.chunk.js.map": "/static/js/248.39d37c9c.chunk.js.map",
@@ -65,6 +65,6 @@
   },
   "entrypoints": [
     "static/css/main.10cdf5d7.css",
-    "static/js/main.020ccd32.js"
+    "static/js/main.296779d2.js"
   ]
 }
