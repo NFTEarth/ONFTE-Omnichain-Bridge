@@ -59,7 +59,7 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         minWidth: "100vw",
         justifyContent: "center",
         alignItems: 'center',
-        background: "#F0F0FF",
+        background: "#000000",
         flexDirection: 'column',
         gap: 60
       }}
